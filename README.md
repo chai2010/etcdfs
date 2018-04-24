@@ -1,2 +1,1 @@
-# etcdfs
-virtual file system on etcd
+# etcdfs: virtual file system on etcd
