@@ -8,11 +8,17 @@
 package etcdfs
 
 import (
+	"flag"
 	"reflect"
 	"strconv"
 	"strings"
 	"testing"
 	"time"
+)
+
+var (
+	tEtcdEnabled = flag.Bool("test-etcd-enabled", false, "enable etcd server")
+	tEtcdHost    = flag.String("test-ectd-host", "localhost:2379", "set etcd nodes")
 )
 
 type TImage struct {
